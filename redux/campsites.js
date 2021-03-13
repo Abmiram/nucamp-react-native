@@ -16,10 +16,10 @@ export const campsites = (state = {
                 ...state, isLoading: true, errMess: null, campsites: []
             }
 
-            case ActionTypes.CAMPSITES_FAILED:
-                return {
-                    ...state, isLoading: false, errMess: action.payload
-                };
+        case ActionTypes.CAMPSITES_FAILED:
+            return {
+                ...state, isLoading: false, errMess: action.payload
+            };
 
             default:
                 return state;

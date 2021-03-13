@@ -30,7 +30,7 @@ class Directory extends Component {
                     onPress={() => navigate('CampsiteInfo', { campsiteId: item.id })}
                     imageSrc={{uri: baseUrl + item.image}}
                 />
-            )
+            );
         };
 
         if (this.props.campsites.isLoading) {
@@ -41,7 +41,7 @@ class Directory extends Component {
                 <View>
                     <Text>{this.props.campsites.errMess}</Text>
                 </View>
-            )
+            );
         }
         return (
             <FlatList 
