@@ -96,9 +96,6 @@ class CampsiteInfo extends Component {
     }
 
     markFavorite(campsiteId) {
-        console.log('-------------------------------------------------------');
-        console.log(campsiteId);
-        console.log('-------------------------------------------------------');
         this.props.postFavorite(campsiteId);
     }
 
@@ -111,10 +108,6 @@ class CampsiteInfo extends Component {
     }
 
     handleComment(campsiteId) {
-        console.log('-------------------------------------------------------');
-        console.log(campsiteId);
-        console.log('-------------------------------------------------------');
-        console.log(JSON.stringify(this.state));
         this.props.postComment(campsiteId, this.state.rating, this.state.author, this.state.text);
         this.toggleModal();
     }
